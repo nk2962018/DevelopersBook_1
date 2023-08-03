@@ -9,5 +9,11 @@ describe('Developer Book works fine when', () => {
   expect(title.textContent).toBe('Developers Book')
 
   });
+
+  it('it displays all the 5 books' , () => {
+    render(<DevelopersBook/>);
+    const books = screen.getAllByTestId('book')
+    expect(books).toHaveLength(5)
+  });
   
 });
