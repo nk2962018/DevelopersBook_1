@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import DevelopersBook from './DevelopersBook';
+import DevelopersBook from '../componenets/DevelopersBook';
 
 describe('Developer Book works fine when', () => {
 
